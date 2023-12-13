@@ -10,7 +10,7 @@ streamlit.header('Breakfast Menu')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
 streamlit.text('🥗 Kale, Spinach & Rocket Smoothie')
 streamlit.text('🐔 Hard-Boiled Free-Range Egg')
-streamlit.text('🥑🍞 Avocado Toast')
+streamlit.text('🥑🍞 Avocado Toast')=
 
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
@@ -34,7 +34,7 @@ def get_fruityvice_data(this_fruit_choice):
 # New section to display fruityvice API response
 streamlit.header("Fruityvice Fruit Advice!")
 try:
-   fruit_choice = streamlit.text_input('What fruit would you like information about?',"not fruit_choice" = TRUE)
+   fruit_choice = streamlit.text_input('What fruit would you like information about?',"not fruit_choice" == TRUE)
    if not fruit_choice:
       streamlit.error("Please select a fruit to get information.")
    else:
